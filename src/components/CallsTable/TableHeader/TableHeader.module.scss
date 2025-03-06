@@ -1,0 +1,86 @@
+.table-header {
+  width: 100%;
+}
+
+// .table-header__cell.has-icon {
+//   cursor: url("../../../assets//icons/ui/cursor.svg"), pointer;
+// }
+
+.table-header__row {
+  width: 100%;
+  position: relative;
+  font-size: 14px;
+  line-height: 20.72px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 40px;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: var(--ui-border-gray);
+  }
+}
+
+.table-header__cell {
+  position: relative;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 24px 0 20px 0;
+}
+
+.table-header__text {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(94, 119, 147, 0.87);
+}
+
+/* Фиксированные ширины */
+/* Тип */
+.table-header__cell:nth-child(1) {
+  width: 94px; // 54px + 40px padding
+  padding-left: 40px;
+}
+
+/* Время */
+.table-header__cell:nth-child(2) {
+  width: 88px;
+}
+
+/* Сотрудник */
+.table-header__cell:nth-child(3) {
+  width: 129px;
+}
+
+/* Звонок */
+.table-header__cell:nth-child(4) {
+  width: 325px;
+}
+
+/* Источник */
+.table-header__cell:nth-child(5) {
+  width: 214px;
+}
+
+/* Оценка */
+.table-header__cell:nth-child(6) {
+  width: 146px;
+}
+
+/* Длительность */
+.table-header__cell:nth-child(7) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 40px;
+  position: relative;
+  .table-header__text {
+    width: fit-content;
+    cursor: url("../../../assets//icons/ui/cursor.svg"), pointer;
+  }
+}

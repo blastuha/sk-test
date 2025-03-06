@@ -1,0 +1,76 @@
+.calls-filter-bar__left-wrapper {
+  display: flex;
+  position: relative;
+  gap: 16px;
+}
+
+.calls-filter-bar__left {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: url("../../../../assets/icons/ui/cursor.svg"), auto;
+}
+
+.calls-filter-bar__text {
+  font-size: 14px;
+  line-height: 20.72px;
+  color: var(--ui-text-secondary);
+  cursor: url("../../../../assets/icons/ui/cursor.svg"), auto;
+}
+
+.calls-filter-bar__text--active {
+  color: var(--color-blue);
+}
+
+.calls-filter-bar__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 12px;
+  background-color: var(--color-white);
+  box-shadow: 0px 4px 20px 0px #00000014;
+  border-radius: 8px;
+  min-width: 133px;
+  z-index: 10;
+}
+
+.calls-filter-bar__item {
+  padding: 7px 12px;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--color-gray-dark);
+  cursor: url("../../../../assets/icons/ui/cursor.svg"), auto;
+  &:hover {
+    background-color: var(--color-light-blue);
+    transition: all 0.2s ease;
+  }
+}
+
+.calls-filter-bar__reset {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--ui-text-secondary);
+  font-size: 14px;
+  cursor: url("../../../../assets/icons/ui/cursor.svg"), auto;
+  padding: 0;
+}
+
+.calls-filter-bar__right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.active-icon {
+  color: var(--ui-blue);
+}
+
+.down-icon {
+  color: var(--ui-icon);
+
+  &:hover {
+    color: var(--ui-blue);
+    transition: color 0.2s ease;
+  }
+}

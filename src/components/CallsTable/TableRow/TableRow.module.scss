@@ -1,0 +1,114 @@
+.calls-table__row {
+  cursor: url("../../../assets/icons/ui/cursor.svg"), auto;
+  position: relative;
+  transition: background 0.3s;
+
+  &:hover {
+    background-color: var(--ui-hover-gray);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 40px;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: var(--ui-border-gray);
+  }
+}
+
+.calls-table__cell {
+  height: 65px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 15px;
+  line-height: 21px;
+  color: var(--ui-text);
+  vertical-align: middle;
+}
+
+.calls-table__user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.calls-table__avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.error-text {
+  font-size: 14px;
+  line-height: 19.6px;
+  color: var(--ui-red);
+}
+
+.call-info {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.call-duration {
+  @extend .call-info;
+}
+
+.call-time {
+  @extend .call-info;
+}
+
+.call-number {
+  @extend .call-info;
+}
+
+/* Фиксированные ширины */
+/* Тип */
+.calls-table__cell:nth-child(1) {
+  width: 94px;
+  padding-left: 40px;
+}
+
+/* Время */
+.calls-table__cell:nth-child(2) {
+  width: 88px;
+}
+
+/* Сотрудник */
+.calls-table__cell:nth-child(3) {
+  width: 129px;
+}
+
+/* Звонок */
+.calls-table__cell:nth-child(4) {
+  width: 325px;
+}
+
+/* Источник */
+.calls-table__cell:nth-child(5) {
+  width: 214px;
+  font-size: 15px;
+  color: var(--ui-text-secondary);
+}
+
+/* Оценка */
+.calls-table__cell:nth-child(6) {
+  width: 146px;
+}
+
+/* Длительность */
+.calls-table__cell:nth-child(7) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  text-align: right;
+  padding-right: 40px;
+}
